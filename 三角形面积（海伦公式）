@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	double a,b,c;
+	double p,S;
+	scanf("%lf%lf%lf",&a,&b,&c);
+	if(a+b>c&&a+c>b&&b+c>a){
+	
+		S=sqrt(p*(p-a)*(p-b)*(p-c));
+	printf("%.2lf",S);
+	}
+	else
+	printf("这不是一个三角形！");
