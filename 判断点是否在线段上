@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+	double a,b,x1,x2,y1,y2;
+	scanf("%lf%lf\n",&a,&b);
+	scanf("%lf%lf\n",&x1,&y1);
+	scanf("%lf%lf",&x2,&y2);
+	if(a>=(x1+x2)/2||b>=(y1+y2)/2)
+	printf("该点不在线段上！");
+	
+	else if((a-x1)/(b-y1)==(x1-x2)/(y1-y2)&&(a-x2)/(b-y2)==(x1-x2)/(y1-y2)){
+		printf("该点在线段上！"); 
+	}
+	else 
+	printf("该点不在线段上！"); 
