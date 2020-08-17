@@ -1,4 +1,4 @@
-#inculde<stdio.h>
+#include<stdio.h>
 int main(){
 int a,b,c;
 int x,y;
@@ -10,7 +10,7 @@ c=a%b;
 a=b;
 b=c;
 }
-printf("%d",a);
+printf("%d",a);}
 
 
 （递归版)
