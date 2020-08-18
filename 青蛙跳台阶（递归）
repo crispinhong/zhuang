@@ -1,0 +1,28 @@
+解题思路；
+假设跳上第 n 级台阶的 f(n) 种跳法，跳上n级台阶有两种情况：
+1、 从第 n - 1 阶台阶上跳 1 级台阶，此时有 f(n - 1) 种跳法；
+2、 从第 n - 2 阶台阶上跳 2 级台阶，此时有 f(n - 2) 种跳法。
+由于这两种情况都可以达到跳上n级台阶，所以 f(n) = f(n - 1) + f(n - 2) (n >= 2)。
+边界条件：f(1) = 1, f(0) = 1;
+代码实现：
+#include<stdio.h>
+int numWays(int n){
+    if (n < 2) {
+        return 1;
+    }
+
+    int a = 1, b = 1;
+    for (int i = 2; i <= n; i++) {
+        int temp = (a + b) % 1000000007;
+        a = b; 
+        b = temp;
+    }
+    return b;
+}
+int main(){
+	int n;
+	printf("请输入青蛙要跳上的台阶数："); 
+	scanf("%d",&n);
+	printf("共有%d种跳法！",numWays(n));
+  }
+	
