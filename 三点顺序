@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+
+int x1,x2,x3,y1,y2,y3;
+printf("请输入三个点的坐标："); 
+scanf("%d%d%d%d%d%d",&x1,&y1,&x2,&y2,&x3,&y3);
+	int a=x2-x1;
+	int b=y2-y1;
+	int c=x3-x1;
+	int d=y3-y1;
+	if(a*d-b*c>0)
+	printf("三点逆时针排列！");
+	else
+	printf("三点顺时针排列！"); 
+	}
