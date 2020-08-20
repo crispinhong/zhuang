@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+	int a,b,m;
+	scanf("%d%d%d",&a,&b,&m);
+	if(a%m==b%m)
+	printf("%d与%d对于%d同余",a,b,m);
+	else
+	printf("%d与%d对于%d不同余",a,b,m);
+} 
