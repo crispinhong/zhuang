@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	double a[12];
+	int i;
+	double sum,average;
+	printf("请输入每月的工资："); 
+	for(i=0;i<12;i++){
+		scanf("%lf",&a[i]);
+		sum+=a[i];
+	}
+	average=sum/12;
+	printf("工资平均值为：$%.4lf",average);
+}
