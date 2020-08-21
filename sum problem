@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+	int a;
+	int sum;
+	printf("please enter n calculate 1+......n\n");
+	scanf("%d",&a);
+	sum=((1+a)*a)/2;
+	printf("=%d",sum);
+} 
