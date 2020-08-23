@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+	int n,x;
+	printf("please enter:");
+	scanf("%d",&n);
+	x=5*n*n;
+	printf("height=%d!",x);
+}
