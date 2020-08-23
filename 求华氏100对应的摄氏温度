@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+	double f,c;
+	printf("please enter Fahrenheit degree:");
+	scanf("%lf",&f);
+	c=(5*(f-32))/9;
+	printf("degree centigrade:");
+	printf("%lf",c);
+}
