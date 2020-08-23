@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	int n,m,x;
+	double p;
+	printf("please enter math grade:");
+	scanf("%d",&n);
+	printf("please enter English grade:");
+	scanf("%d",&m);
+	printf("please enter computer grade:");
+	scanf("%d",&x);
+	p=(n+m+x)/3;
+	printf("average number:%lf",p);
+  }
