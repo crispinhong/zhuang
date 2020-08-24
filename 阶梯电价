@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	double x,y;
+	printf("please enter:");
+	scanf("%lf",&x);
+	if(x<=50){
+	y=0.53*x;	
+	}
+	else{
+	y=0.58*(x-50)+26.5;
+			}
+	printf("cost=%.2lf",y);
+} 
