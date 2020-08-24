@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int x1,y1,x2,y2;
+	printf("please enter time:\n");
+	scanf("%d",&x1);
+	printf(":");
+	scanf("%d",&y1);
+	scanf("%d",&x2);
+	printf(":");
+	scanf("%d",&y2);
+	printf("The train journey time is %d houers %d minutes\n",x1-x2,y1-y2);
+} 
