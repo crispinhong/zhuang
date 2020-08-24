@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	double m,n,r,i;
+	printf("please enter money,year,rate: ");
+	scanf("%lf%lf%lf",&m,&n,&r);
+	i=m*pow(1+r,n)-m;
+	printf("interest=%.3lf",i); 
+}
