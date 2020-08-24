@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+	double n,m,y1,y2,y3,y4;
+	printf("please enter:");
+	scanf("%lf%lf",&n,&m);
+	y1=n+m;
+	printf("n+m=%.2lf\n",y1);
+	y2=n-m;
+	printf("n-m=%.2lf\n",y2);
+	y3=n*m;
+	printf("n*m=%lf\n",y3);
+	y4=n/m;
+	printf("n/m=%.2lf\n",y4);
+} 
