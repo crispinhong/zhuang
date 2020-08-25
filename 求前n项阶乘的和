@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int i,f,n,s=1,sum=0;
+	printf("please enter:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		f*=s;
+		s++;	
+		sum+=f;
+	                }
+	printf("sum=%.2d",sum);                	
+          }
