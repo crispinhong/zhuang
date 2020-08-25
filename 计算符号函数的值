@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+	int x,y;
+	printf("please enter:");
+	scanf("%d",&x);
+	if(x>=0){
+	if(x>0)
+	printf("sign(x)=1");
+	else
+	printf("sign(x)=0");
+	        }	
+	else
+	printf("sign(x)=-1");
+           }
