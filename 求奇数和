@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+	int i=0;
+	int j;
+	printf("please enter:");
+	scanf("%d",&j);
+	while(j>0){
+	if(j%2==1){
+		i+=j;
+	}	
+	scanf("%d",&j);	
+	          }
+	printf("%d",i);	
+    }    
