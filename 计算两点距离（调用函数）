@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+double dist(double x1,double y1,double x2,double y2){
+double d,i,j;
+i=x1-x2;
+j=y1-y2;
+d=pow(i,2)+pow(j,2);
+return sqrt(d);
+}
+int main(){
+	double x1,y1,x2,y2;
+	printf("please enter:");
+	scanf("%lf%lf%lf%lf",&x1,&y1,&x2,&y2);
+	printf("the distance is:%.2lf\n",dist(x1,y1,x2,y2));
+}
