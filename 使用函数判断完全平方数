@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int IsSquare(double n){
+	int temp;
+	if((int)sqrt(n)==sqrt(n))
+	temp=1;
+	else
+	temp=0;
+	return temp;
+}
+int main(){
+	int n;
+	printf("please enter:");
+	scanf("%d",&n);
+	if(IsSquare(n)==1)
+	printf("YES");
+	else
+	printf("NO");
+}
