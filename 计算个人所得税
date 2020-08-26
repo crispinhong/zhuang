@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+	int n;
+	double s;
+	printf("please enter:");
+	scanf("%d",&n);
+	if(n<=1600)
+	printf("s=0");
+    else if(n<=2500){
+	s=(n-1600)*0.05;	
+	printf("s=%.2lf",s);	
+	}
+	else if(n<=3500){
+	s=(n-1600)*0.1;	
+	printf("s=%.2lf",s);	
+	}
+	else if(n<=4500){
+	s=(n-1600)*0.15;
+	printf("s=%.2lf",s);	
+	}
+	else {
+	s=(n-1600)*0.2;	
+	printf("a=%.2lf",s);	
+	}
+          }
