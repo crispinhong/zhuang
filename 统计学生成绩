@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+	int n,i,t,a=0,b=0,c=0,d=0,e=0;
+	printf("please enter:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		scanf("%d",&t);
+		if(t>0&&t<=59){
+			e++;
+		}
+		if(t>=60&&t<=69){
+			d++;
+		}
+		if(t>=70&&t<=79){
+			c++;
+		}
+		if(t>=80&&t<=89){
+			b++; 
+		}
+		if(t>=90&&t<=100){
+			a++;
+		}
+	}
+	printf("A=%d,B=%d,C=%d,D=%d,E=%d",a,b,c,d,e);
+} 
