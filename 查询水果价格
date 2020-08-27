@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+	int n,i;
+	printf("please enter:");
+	scanf("%d",&n);
+	for(i=0;i<5;i++){
+	if(n==1){
+	printf("apple=3.0\n");}	
+	if(n==2){
+	printf("pear=2.5\n");}	
+	if(n==3){
+	printf("orange=4.1\n");}	
+	if(n==4){
+	printf("grape=10.2\n");}
+	if(n==0){
+	         break;
+	}
+	if(n!=1&&n!=2&&n!=3&&n!=4){//&&是逻辑与，||是逻辑或。 
+	printf("0!\n");}
+	scanf("%d",&n);
+	}
+	printf("exit!");
+}
