@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	int i,t,n;
+	int a=2.0,b=1.0;
+	double sum=0;
+	printf("please enter:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+	sum+=a*1.0/b*1.0;
+	t=a+b;
+	b=a;
+	a=t;
+	}
+	printf("sum=%.2lf",sum);
+}
