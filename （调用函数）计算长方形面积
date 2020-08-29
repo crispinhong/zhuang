@@ -1,0 +1,13 @@
+#include<stdio.h> 
+double fun(double a,double b){
+	double s;
+	s=a*b;
+	return s;
+}
+int main(){
+	double a,b,s;
+	printf("please enter length and width:");
+	scanf("%lf%lf",&a,&b);
+	s=fun(a,b);
+	printf("the area of a rectangle :%.2lf",s);
+}
