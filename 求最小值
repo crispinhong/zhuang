@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	int n,i,min,t,s;
+	printf("please enter:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		scanf("%d",&t);	
+		if(t<min){
+		min=t;	
+		}
+	}
+	printf("min=%d",min); 
+} 
