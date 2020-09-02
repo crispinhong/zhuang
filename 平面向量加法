@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+	double x1,y1,x2,y2;
+	double a,b;
+	printf("please enter:");
+	scanf("%lf%lf%lf%lf",&x1,&y1,&x2,&y2);
+	a=x1+x2;
+	b=y1+y2;
+	printf("%.2lf %.2lf",a,b);
+}
