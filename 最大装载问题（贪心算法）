@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(){
+	int c,wi,t;
+	scanf("%d%d",&c,&wi);
+	t=c/wi+1;
+	printf("%d",t);
+}	
