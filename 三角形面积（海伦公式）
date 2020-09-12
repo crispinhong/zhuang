@@ -5,7 +5,7 @@ int main(){
 	double p,S;
 	scanf("%lf%lf%lf",&a,&b,&c);
 	if(a+b>c&&a+c>b&&b+c>a){
-	
+	  	
 		S=sqrt(p*(p-a)*(p-b)*(p-c));
 	printf("%.2lf",S);
 	}
