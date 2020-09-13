@@ -1,0 +1,21 @@
+#include<stdio.h>
+int fun(int m,int n){
+	int i,j;
+	int d;
+	int s=0,t=0;
+	for(i=0;i<m;i++){
+		s+=i;
+	}
+	for(j=0;j<=n;j++){
+		t+=j;
+	}
+	d=t-s;
+	return d;
+}
+int main(){
+	int m,n,sum;
+	printf("please enter:");
+	scanf("%d%d",&m,&n);
+	sum=fun(m,n);
+	printf("sum=%d",sum);
+} 
