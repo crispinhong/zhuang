@@ -5,7 +5,7 @@ void pyramid(int n){
 	for (i=0;i<=n;i++)
 	{
 		//输出左边的空格，每行有n-i个空格
-		for(j=0;j<n-j;j++){
+		for(j=0;j<n-i;j++){
 			printf(" ");
 		} 
 		//每一行左边空格输出完后输出数字，n行n个数字（数字后面有一个空格）
