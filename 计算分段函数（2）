@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	double x,f;
+	printf("please enter:");
+	scanf("%lf",&x);
+	if(x>=0){
+		f=sqrt(x);
+		printf("f(%.2lf)=%lf",x,f);		
+	} 
+	else
+	{
+		f=pow((x+1),2)+2*x+1/x;
+		printf("f(%.2lf)=%lf",x,f);
+			}
+        printf("\n");
+} 
