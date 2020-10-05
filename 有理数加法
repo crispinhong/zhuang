@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+	int a1,b1,a2,b2;
+	double c1,c2,t;
+	scanf("%d",&a1);
+	printf("/");
+	scanf("%d",&b1);
+	scanf("%d",&a2);
+	printf("/");
+	scanf("%d",&b2);
+	printf("\n");
+	c1=a1*b2+a2*b1;
+	c2=b1*b2;
+	t=c1/c2;
+	printf("%.3lf",t);
+}
