@@ -1,0 +1,102 @@
+#include<stdio.h>
+
+int isYearRunnian(int year);		//	函数声明
+int daysOfMonth(int year,int month);
+
+void main(void )
+{
+	int year_start,month_start,day_start;
+	int year_end,month_end,day_end;
+	int year;
+	int days=0;	//	result
+	int month;
+
+	printf("input date:(yyyy/mm/dd):");
+	scanf("%d/%d/%d",&year_start,&month_start,&day_start);
+	printf("%d/%d/%d\n",year_start,month_start,day_start);
+
+	printf("input date:(yyyy/mm/dd):");
+	scanf("%d/%d/%d",&year_end,&month_end,&day_end);
+	printf("%d/%d/%d\n",year_end,month_end,day_end);
+
+
+	for(month= month_start;month<=12;month++ )
+	{
+		days += daysOfMonth(year_start,month);
+		printf("month = %d",month);
+		printf("days = %d",daysOfMonth(year_start,month));		
+	}
+	days -= day_start;
+
+	for(month= 1;month<month_end;month++ )
+	{
+		days += daysOfMonth(year_end,month);
+		printf("month = %d",month);
+		printf("days = %d",daysOfMonth(year_start,month));	
+	}
+	days += day_end;
+
+
+	for(year = year_start+1; year < year_end; year++)
+	{
+		if(isYearRunnian(year))		
+			days += 366;		
+		else		
+			days += 365;		
+	}
+
+	if(year_start == year_end)
+	{
+		if(isYearRunnian(year_start))
+			days -= 366;
+		else
+			days -= 365;
+	}	
+
+	printf("days = %d\n",days);
+}
+
+int isYearRunnian(int year)			//	函数定义
+{
+	if(year%400 ==0 || year %4 == 0 && year %100)
+	{
+		return 1;	//	runnian
+	}
+	else
+	{
+		return 0;		// pingnian
+	}
+
+}
+
+int daysOfMonth(int year,int month)		// 函数定义
+{
+	int days=-1;
+	switch(month){
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+		days = 31;
+		break;
+	case 2:
+		if(isYearRunnian(year))		
+			days = 29;		
+		else		
+			days = 28;
+		break;
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		days = 30;
+		break;
+	default:
+		printf("error month");
+	}
+	printf("dasy = %d\n",days);
+	//return days;
+}
